@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

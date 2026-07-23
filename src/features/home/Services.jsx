@@ -4,7 +4,7 @@ import BoxService from '../../components/common/BoxService';
 
 const Services = () => {
     return (
-        <div className='max-w-7xl mx-auto md:w-full mt-20 pb-100'>
+        <div className='max-w-7xl mx-auto md:w-full mt-20'>
             <Title title={'خدمات ما'}/>
 
             {/* ServiceBox */}

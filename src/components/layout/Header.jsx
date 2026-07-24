@@ -106,7 +106,7 @@ const Header = () => {
                   </div>
             </div>
             {/* Icons around box */}
-         <div className="max-md:hidden">
+         <div className="max-xl:hidden">
              <div className="w-16 h-16 absolute top-20 -left-38">
                 <img className="w-full h-full" src="/images/home/Vector.png" alt="" />
             </div>

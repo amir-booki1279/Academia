@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import Button from "../common/Button";
 import { useState } from "react";
 import BoxHeader from "../common/BoxHeader";
+import { FaList, FaRegClock } from "react-icons/fa";
+import { FaBagShopping, FaPeopleRoof } from "react-icons/fa6";
+import { PiStudentBold } from "react-icons/pi";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -41,18 +44,20 @@ const Header = () => {
             </ul>
             {/* Shop And Login */}
             <div className="flex items-center gap-4 max-md:hidden">
-              <Link className="flex justify-center h-12.5 w-12.5  items-center bg-white rounded-full"></Link>
+              <Link className="flex justify-center h-12.5 w-12.5  items-center bg-white rounded-full">
+              <FaBagShopping className="text-[#2196F3]  text-lg" />
+              </Link>
               <Button title={"ورود به حساب"} />
             </div>
             {/* buttom humberger */}
             <div className="justify-center items-center w-12.5 h-12.5 bg-white rounded-md hidden max-md:flex" onClick={() => setShow(!show)}>
-              <button className=" "></button>
+              <button className=""><FaList className="text-xl"/></button>
             </div>
           </div>
 
           {/* SideBar Mobile */}
           <div
-            className={`${show ? "translate-x-0" : "translate-x-72"} transition-all duration-300 bg-white  top-0 right-0 h-screen w-2xs rounded-sm md:hidden max-md:fixed overflow-hidden fixed`}
+            className={`${show ? "translate-x-0" : "translate-x-72"} transition-all duration-300 bg-white z-30 top-0 right-0 h-screen w-2xs rounded-sm md:hidden max-md:fixed overflow-hidden fixed`}
           >
             <div className="flex flex-col py-16 ">
               <div className="flex items-center justify-center gap-3">
@@ -81,7 +86,7 @@ const Header = () => {
                 </li>
               </ul>
               <div className="flex items-center justify-center gap-4">
-                <Link className="flex justify-center h-12.5 w-12.5  items-center bg-[#2196F3] rounded-full"></Link>
+                <Link className="flex justify-center h-12.5 w-12.5  items-center bg-[#2196F3] rounded-full"> <FaBagShopping className="text-white text-lg" /> </Link>
                 <Button title={"ورود به حساب"} />
               </div>
             </div>
@@ -99,9 +104,9 @@ const Header = () => {
                   <input className="py-3.75 px-5 bg-white outline-0 rounded-2xl w-full hover:shadow-md hover:drop-shadow-[rgba(0, 0, 0, 0.02)] cursor-pointer" type="text" placeholder="چی میخوای یاد بگیری ؟" />
 
                   <div className="grid grid-cols-3 max-md:grid-cols-2 max-md:px-4 max-sm:grid-cols-1 flex-wrap gap-8 w-full">
-                      <BoxHeader title={'مدرس مجرب'} number={167}/>
-                      <BoxHeader title={'مدرس مجرب'} number={167}/>
-                      <BoxHeader title={'مدرس مجرب'} number={167}/>
+                      <BoxHeader title={'مدرس مجرب'} number={167} icon={<PiStudentBold />}/>
+                      <BoxHeader title={'مدرس مجرب'} number={167} icon={<FaRegClock />}/>
+                      <BoxHeader title={'مدرس مجرب'} number={167} icon={<FaPeopleRoof />}/>
 
                   </div>
             </div>

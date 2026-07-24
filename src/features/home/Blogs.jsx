@@ -2,10 +2,11 @@ import React from "react";
 import Title from "../../components/common/Title";
 import { FaEye, FaRegCalendar } from "react-icons/fa";
 import BoxBlog from "../../components/common/BoxBlog";
+import Button from '../../components/common/Button'
 
 const Blogs = () => {
   return (
-    <div className="max-w-7xl mx-auto md:w-full mt-20 max-lg:px-4 pb-200">
+    <div className="max-w-7xl mx-auto md:w-full mt-20 max-lg:px-4 ">
       <Title title={" اخبار و مقالات"} />
       <div className="grid grid-cols-2 gap-10 w-full max-xl:grid-cols-1">
         <div className="flex flex-col gap-8 max-xl:items-center">
@@ -55,6 +56,9 @@ const Blogs = () => {
             <BoxBlog/>
             </div>
 
+      </div>
+      <div className="flex justify-center mt-7">
+        <Button title={'مشاهده همه'}/>
       </div>
     </div>
   );

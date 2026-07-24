@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className='w-full h-auto pb-25  bg-[url("/images/home/header-bg.png")] bg-cover  bg-no-repeat bg-position-[center_35%] rounded-br-[350px] rounded-bl-[350px] '>
       {/* Header Top */}
-      <div className="max-w-7xl mx-auto pt-8 max-md:px-4 max-md:w-full">
+      <div className="max-w-7xl mx-auto pt-8 max-lg:px-4 max-md:w-full">
         <div className="w-full  mx-auto h-12.5  ">
           <div className="flex  w-full h-full justify-between items-center">
             <div className="flex items-center gap-2">
@@ -25,7 +25,7 @@ const Header = () => {
               <h2 className="text-[20px]  font-bold">آکادمیا</h2>
             </div>
             {/* Menu */}
-            <ul className="flex items-center gap-12 max-md:hidden">
+            <ul className="flex items-center gap-12 max-md:hidden max-lg:gap-7  ">
               <li>
                 <Link className="font-semibold">  خانه </Link>
               </li>
@@ -96,7 +96,7 @@ const Header = () => {
       {/*End Header Top */}
 
       {/* Header Box */}
-        <section className="max-w-3xl mx-auto mt-20 max-md:px-4 relative max-md:w-full">
+        <section className="max-w-3xl mx-auto mt-20 max-lg:px-4 relative max-md:w-full">
             <div className="flex flex-col gap-12 items-center">
                   <p className="text-2xl">پلتفرم اموزش طراحی وب</p>
                   <h2 className="text-[70px] font-bold w-full max-md:text-[60px]">مرجع اموزش برنامه نویسی</h2>

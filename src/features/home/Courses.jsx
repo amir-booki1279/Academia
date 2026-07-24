@@ -5,9 +5,9 @@ import Button from '../../components/common/Button';
 
 const Courses = () => {
   return (
-    <div className="max-w-7xl mx-auto md:w-full mt-20  max-sm:px-5">
+    <div className="max-w-7xl mx-auto md:w-full mt-20  max-sm:lg-4">
       <Title title={"دوره‌های اموزشی "} />
-      <div className="w-full grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8">
+      <div className="w-full grid grid-cols-4 max-xl:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-8">
         <ProductCard
           img={"/images/courses/react.png"}
           title={"دوره جامع React JS صفر تا صد"}

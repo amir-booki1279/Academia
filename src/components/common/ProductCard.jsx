@@ -4,8 +4,8 @@ import { LuNotebookPen } from 'react-icons/lu';
 
 const ProductCard = ({img,title,icon,lessonsNumber,clockNumber,date,teacherName,studentNumber,like,price}) => {
     return (
-        <div className='flex flex-col p-4 justify-start gap-4.5 items-start bg-white rounded-3xl'>
-            <img className='h-45 w-full' src={img} alt="" />
+        <div className='flex flex-col p-4 justify-start max-sm:items-center gap-4.5 items-start bg-white rounded-3xl'>
+            <img className='h-45 w-full max-sm:w-[80%] text-center' src={img} alt="" />
             <h2 className='text-base font-bold'> {title}</h2>
 
             <div className='w-full bg-slate-200 px-3 font-medium rounded-3xl flex justify-between items-center h-10'>
